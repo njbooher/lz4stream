@@ -23,8 +23,6 @@ typedef struct lz4stream_t
   void *tail;
 } lz4stream;
 
-typedef lz4stream* lz4streamptr;
-
 lz4stream * lz4stream_open_read(const char * filename);
 
 /* NOTE: lz4stream_fdopen_read() close fd if error occured,
